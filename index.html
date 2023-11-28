@@ -1,8 +1,4 @@
-<!--
-  Hit RUN to see this project in action!
-  
-  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
--->
+
 
 <!DOCTYPE html>
 <html>
@@ -12,6 +8,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Memories Photobooth & Rentals</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="js/eventHandlers.js"> </script>
+  <script src="js/functions.js"> </script>
 </head>
 
 <body>
@@ -24,9 +22,9 @@
       <div class="topBanner">
         <button> Home </button>
         <button> Our Productions </button>
-        <div class="quoteButton">
-          <button class="quotebtn">Get a Quote</button>
-          <div class="quoteButton-content">
+        <div class="dropdown">
+          <button onclick="quoteFunction()" class="quoteBtn">Get a Quote</button>
+          <div id="myDropdown" class="dropdown-content">
             <a href="#">For the booth</a>
             <a href="#">Service Area</a>
             <a href="#">Event Rental</a>
