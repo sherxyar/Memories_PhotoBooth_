@@ -1,41 +1,78 @@
-html,
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  
+  /* Add this style to ensure the background color covers the entire page */
+  html, body {
+    height: 100%;
+  }
+  
+  main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .background {
+    background-color: rgba(0, 0, 0, 0.918);
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
 
-main {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.background {
- /* background: linear-gradient(to bottom, rgb(245, 231, 231), white);*/
- background-color: rgba(0, 0, 0, 0.924);
-  width: 100vw;
-  height: 100vh;
-}
-.price-container {
-    display: grid;
-                      text-align: center;
-                      grid-template-columns: 55% 35%;
-                      grid-column-gap: 10%;
-                      border: 1px solid #cfcfcf;
-                      border-radius: 0.75rem;
-                      margin-bottom: 0.625rem;
-                      padding: 0.875rem 9.0909090909% 1.5rem;
+  
+  .price-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.75rem;
+    margin-bottom: 0.625rem;
+    padding: 0.875rem 9.0909090909% 1.5rem;
   }
   
   .price-item {
-   
+    flex: 1 0 21%; /* The 21% denotes the width of each box, you can adjust this value to fit your design */
+    box-sizing: border-box;
+    margin: 1em;
     padding: 20px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
+  .feature-box {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .book-now-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
   
