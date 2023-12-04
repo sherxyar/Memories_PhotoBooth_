@@ -20,6 +20,7 @@
       <div class='topHeader'>
         <p class="MemoriesFont"> Memories <br> Photobooth & Rentals </p>
       </div>
+      
       <div class="topBanner">
         <button> Home </button>
         <button> Our Productions </button>
@@ -34,25 +35,32 @@
  
         <button> RC Rentals </button>
         <button> RC Socials </button>
-
       </div>
 
-         
-      <div class="samples">
-        <h2 id="SamplesH">Our Samples</h2>
+      <h2 id="SamplesH">Our Samples</h2>   
+      <div class="samples"> 
         <img src="https://raw.githubusercontent.com/sherxyar/Memories_PhotoBooth_/main/img/13.jpg?token=GHSAT0AAAAAACK32NEMWGK5ZMHZF36TETJKZLNI5BA" width="300" height="200" alt="Image 1">
         <img src="https://github.com/sherxyar/Memories_PhotoBooth_/blob/main/img/MAB%204.jpg?raw=true" width="300" height="200" alt="Image Description">
         <img src="https://github.com/sherxyar/Memories_PhotoBooth_/blob/main/img/MAB%205.jpg?raw=true" width="300" height="200" alt="Image Description">
         <img src="https://github.com/sherxyar/Memories_PhotoBooth_/blob/main/img/_FTM8689.JPG?raw=true" width="300" height="200" alt="Image Description">
-    </div>
+      </div>
     
-
       <div class="bookBooth">
-        <h2>Book Your Booth Today</h2>
+        <h2>Any questions? We are here to assist</h2>
         <div class="buttonContainer">
-          <button> Email </button>
-          <button> Call </button>
-        </div>
+          <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Contact Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <button type="submit">Submit</button>
+        </form>
+     
       </div>
       
     </div>
