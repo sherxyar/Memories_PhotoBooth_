@@ -47,12 +47,16 @@ main {
 
 .samples {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
 }
 
+#SamplesH{
+  color: #ddd;
+  justify-content: center;
+  animation: blink 1s linear infinite;
+}
 .MemoriesFont {
   color: #ffffff;
   text-align: center;
