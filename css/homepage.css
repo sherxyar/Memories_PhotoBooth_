@@ -219,3 +219,100 @@ input, .formButton {
 .formButton:hover {
   background-color: #45a049;
 }
+
+
+.howItWorks {
+  text-align: center;
+  background: white;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  padding: 0.875rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+}
+
+
+
+.steps-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  border-radius: 0.75rem;
+  margin-bottom: 0.625rem;
+  padding: 0.875rem 9.0909090909% 1.5rem;
+}
+
+.steps-item {
+  flex: 1 0 21%; /* The 21% denotes the width of each box, you can adjust this value to fit your design */
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  border-radius: 0.75rem;
+  margin-bottom: 0.625rem;
+  padding: 0.875rem 9.0909090909% 1.5rem;
+}
+
+.service-item {
+  flex: 1 0 21%;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
