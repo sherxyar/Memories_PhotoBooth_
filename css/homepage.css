@@ -21,7 +21,7 @@ main {
 
 
 .background {
-  background-color: rgba(0, 0, 0, 0.918);
+  background-color: #1d1212;
   width: 100%;
   min-height: 100%;
   position: relative;
@@ -69,6 +69,15 @@ main {
 
 .topHeader {
   justify-content: center;
+  display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically within the container */
+}
+
+.logo {
+  border: #000000;
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin for spacing between logo and text */
 }
 
 .topBanner {
@@ -224,21 +233,18 @@ input, .formButton {
 .howItWorks {
   text-align: center;
   background: white;
-  width: fit-content;
   border: 1px solid black;
   border-radius: 0.75rem;
   padding: 0.875rem;
   margin-bottom: 0.625rem;
-  margin-top: 0.625rem;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50%;
 }
 
-
+.howItWorks h2 {
+  color: #333; /* Adjust the color as needed */
+  margin-bottom: 0.5rem;
+}
 
 .steps-container {
-  background-color: white;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -247,12 +253,11 @@ input, .formButton {
   text-align: center;
   border: 1px solid #cfcfcf;
   border-radius: 0.75rem;
-  margin-bottom: 0.625rem;
-  padding: 0.875rem 9.0909090909% 1.5rem;
+  padding: 1.5rem 9.0909090909% 1.5rem;
 }
 
 .steps-item {
-  flex: 1 0 21%; /* The 21% denotes the width of each box, you can adjust this value to fit your design */
+  flex: 1 0 calc(23% - 1em); /* Adjust the width of each box */
   box-sizing: border-box;
   margin: 1em;
   padding: 20px;
@@ -260,15 +265,30 @@ input, .formButton {
   border: 1px solid #ccc;
   border-radius: 2px;
   background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+
+.steps-item h3 {
+  margin-bottom: 10px;
+}
+
+.ourServices {
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  padding: 0.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.ourServices h2 {
+  color: #000000; /* Adjust the color as needed */
+  margin-bottom: 0.5rem;
 }
 
 .service-container {
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Center items horizontally */
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1200px;
@@ -278,8 +298,9 @@ input, .formButton {
   margin-bottom: 0.625rem;
   padding: 0.875rem 9.0909090909% 1.5rem;
 }
+
 .service-item {
-  flex: 1 0 21%;
+  flex: 1 0 calc(50% - 2em); /* Two items per row, considering margin */
   box-sizing: border-box;
   margin: 1em;
   padding: 20px;
@@ -289,13 +310,24 @@ input, .formButton {
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  width: 200px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
 }
+
+.service-item img {
+  width: 100%; /* Take up full width of the parent */
+  height: 100%; /* Take up full height of the parent */
+  object-fit: cover; /* Resize the image to cover the container, cropping it if necessary */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
 
 .overlay-container {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
@@ -316,7 +348,7 @@ input, .formButton {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
+  font-size: 25px;
   color: #ffffff; /* Text color for both states */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -356,6 +388,12 @@ footer {
   color: #fff;
   padding: 30px 0;
   text-align: center; /* Center the content within the footer */
+}
+
+.footer-section {
+  flex: 1 0 25%;
+  box-sizing: border-box; /* Add this line to include border and padding in the total width */
+  margin: 1em;
 }
 
 .footer-container {
@@ -409,70 +447,21 @@ footer {
   margin: 0;
 }
 
-/* Book booth css */
-
-.bookBooth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #1d1212;
-  color: whitesmoke;
-  padding: 20px;
-  border: 1px solid #331414;
-  border-radius: 10px;
-  margin: 20px;
-}
-
-h3 {
-  margin-bottom: 20px;
-}
-
-.formContainer {
-  width: 100%;
-  max-width: 400px;
-}
-
-.formGroup {
-  margin-bottom: 15px;
-}
-
-label {
-  color: #ddd;
-  display: block;
-  margin-bottom: 8px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-button {
-  width: 100%;
-  padding: 15px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #141f27;
-}
 
 
 /* Footer */
 /* Add this style to ensure the background color covers the entire page */
-html, body {
-  height: 100%;
-}
 
 /* Footer CSS */
+/* Add this style to ensure the background color covers the entire page */
+/* Add this style to ensure the background color covers the entire page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 footer {
   background-color: #1d1212;
   color: #fff;
@@ -497,6 +486,60 @@ footer {
   border: 1px solid #331414;
   border-radius: 10px;
   margin: 20px;
+}
+
+/* Adjust the left border to match the right border of the .footer-right element */
+.contact-section {
+  border-left: 1px solid #331414;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.formContainer {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto; /* Add this line to center the formContainer horizontally */
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ddd;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #141f27;
 }
 
 /* Rest of your existing styles */
