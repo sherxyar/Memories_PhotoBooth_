@@ -1,25 +1,4 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function quoteFunction() {
-    console.log("quoteFunction test");
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.quoteBtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-  //Slidshow function
+//Slidshow function
 
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -52,6 +31,9 @@ function quoteFunction() {
   
 // Automatic slideshow
 let slideInterval;
+window.addEventListener('load', function() {
+  startSlideshow();
+});
 function startSlideshow() {
   slideInterval = setInterval(function() {
     plusSlides(1); // Move to the next slide
