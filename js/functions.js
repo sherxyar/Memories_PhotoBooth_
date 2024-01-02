@@ -46,3 +46,31 @@ function stopSlideshow() {
 }
 
 
+// Form animation
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var formContainer = document.querySelector(".formContainer");
+    
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function handleScroll() {
+      if (isElementInViewport(formContainer)) {
+        formContainer.classList.add("animated-form");
+      }
+    }
+
+    // Initial check in case the form is already in view
+    handleScroll();
+
+    // Attach the event listener to the scroll event
+    window.addEventListener("scroll", handleScroll);
+  });
+
