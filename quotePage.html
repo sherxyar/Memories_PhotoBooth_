@@ -7,8 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Memories Photobooth & Rentals</title>
-  <link href="../Memories_PhotoBooth/css/quote.css" rel="stylesheet" type="text/css" />
-  <link href="../Memories_PhotoBooth/css/homepage.css" rel="stylesheet" type="text/css" />
+  <link href="../Memories_PhotoBooth_/css/quote.css" rel="stylesheet" type="text/css" />
+  <link href="../Memories_PhotoBooth_/css/homepage.css" rel="stylesheet" type="text/css" />
   <script src="js/eventHandlers.js"> </script>
   <script src="js/functions.js"> </script>
 </head>
@@ -17,96 +17,120 @@
 
   <main>
     <div class="background">
+
       <div class='topHeader'>
-        <p class="MemoriesFont"> Memories <br> Photobooth & Rentals </p>
-      </div>
-      <div class="topBanner">
-       <a href="index.html">  <button> Home </button> </a>
-        <button> Our Productions </button>
-        <div class="dropdown">
-          <button onclick="quoteFunction()" class="quoteBtn">Book now</button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">For the booth</a>
-            <a href="#">Service Area</a>
-            <a href="#">Event Rental</a>
-          </div>
+        <!-- Your logo image tag -->
+        <img src="../Memories_PhotoBooth/img/95d5b2cb-ac7f-4612-b2cb-e785ace22c43.png" alt="RC Event Rentals Logo" class="logo">
+    
+        <!-- Your text -->
+        <p class="MemoriesFont"> RC Event Rentals </p>
+    </div>
+    
+
+        <div class="topBanner">
+          <a href="index.html"> <button > Home    </button> </a>
+            <button> Our Productions </button>
+            <div class="dropdown">
+                <a href="quotePage.html">
+                    <button onclick="quoteFunction()" class="quoteBtn">Book now</button>
+                </a>         
+            </div>
+            <button> RC Rentals </button>
+            <a href="#footer">
+              <button>RC Contact</button>
+            </a>
+            
         </div>
- 
-        <button> RC Rentals </button>
-        <button> RC Socials </button>
-      </div>
 
    
-      
-      <div class="price-container">
-        <!-- Box 1 -->
-        <div class="price-item">
-          <h2>2 Hour Basic - 125 Guest $799</h2>
-          <div class="feature-box">
-            <p>Professional host(s)</p>
-         
+      	<div class="container group">
+          <div class="grid-1-5">
+            <h2>2 hours Basic</h2>
+            <h3><span class="uppercase">$799</span></h3>
+            <p>Ideal for shorter events or those looking  for <br> a budget—friendly option</p>
+       
+            <ul>
+              <li>Two-hours</li>
+              <li>Professional host(s)</li>
+              <li>Signs Prop</li>
+              <li>DSLR camera</li>
+              <li>Personalized Photo Overlay</li>
+              <li>Unlimited sessions within booked time</li>
+              <li>Digital Copy</li>
+              <li>Delivery, Set-up & Take down</li>
+            </ul>
+            <a href="" class="button">Book now</a>
           </div>
-          <div class="feature-box">
-            <p>Signs Prop</p>   
+          <div class="grid-1-5 ">
+            <h2>3 Hours Standard</h2>
+            <h3><sup>$</sup>899<span class="small">/mo</span></h3>
+            <p>Ideal package for a three-hour celebration that keeps the energy high from start to finish</p>
+            <ul>
+              <li>Professional host(s)</li>
+              <li>Signs Prop</li>
+              <li>DSLR camera</li>
+              <li>Personalized Photo Overlay</li>
+              <li>Unlimited sessions within booked time</li>
+              <li>Digital Copy</li>
+              <li>USB disk with all photos</li>
+              <li>Delivery, Set-up & Take down</li>
+            </ul>		
+            <a href="" class="button">Book now</a>	
           </div>
-          <div class="feature-box">
-            <p>DSLR camera</p>
+          <div class="grid-1-5 ">
+            <h2>4 Hours Premium</h2>
+            <h3><sup>$</sup>1049<span class="small">/mo</span></h3>
+            <p>Ideal bundle to ensure the celebration continues into the late hours.</p>
+            <ul>
+              <li>Professional host(s)</li>
+              <li>Signs Prop</li>
+              <li>DSLR camera</li>
+              <li>Personalized Photo Overlay</li>
+              <li>Unlimited sessions within booked time</li>
+              <li>Digital Copy</li>
+              <li>USB disk with all photos</li>
+              <li>Delivery, Set-up & Take down</li>
+            </ul>	
+            <a href="" class="button">Book now</a>		
           </div>
-          <div class="feature-box">
-            <p>Unlimited sessions within booked time</p>
+          <div class="grid-1-5">
+            <h2>5 Hour Ultra</h2>
+            <h3><sup>$</sup>499<span class="small">/mo</span></h3>
+            <p>Tailored for extended events or those lasting five hours or more—your perfect choice for a marathon celebration!</p>
+            <ul>
+              <li>Professional host(s)</li>
+              <li>Signs Prop</li>
+              <li>DSLR camera</li>
+              <li>Personalized Photo Overlay</li>
+              <li>Unlimited sessions within booked time</li>
+              <li>Digital Copy</li>
+              <li>USB disk with all photos</li>
+              <li>Delivery, Set-up & Take down</li>
+            </ul>	
+            <a href="" class="button">Book now</a>		
           </div>
-          <button class="book-now-btn">Book Now</button>
+          <div class="grid-1-5">
+            <h2>Custom Package</h2>
+            <h3><span class="uppercase">Let's Talk</span></h3>
+            <p>Reach out to us</p>
+            <a>test</a>
+            <a href="" class="button">Book now</a>
+          </div>		
         </div>
-      
-        <!-- Box 2 -->
-        <div class="price-item">
-          <h2>3 Hour Standard - 175 Guest (Best Value) $899 </h2>
-          <div class="feature-box">
-            <p>Details about the second section go here.</p>
-          </div>
-          <button class="book-now-btn">Book Now</button>
-        </div>
-      
-        <!-- Box 3 -->
-        <div class="price-item">
-          <h2>4 Hour Premium - 225 Guest $1049</h2>
-          <div class="feature-box">
-            <p>Information for the third section is placed here.</p>
-          </div>
-          <div class="feature-box">
-            <p>Information for the third section is placed here.</p>
-          </div>
-          <div class="feature-box">
-            <p>Information for the third section is placed here.</p>
-          </div>
-          <div class="feature-box">
-            <p>Information for the third section is placed here.</p>
-          </div>
-          <button class="book-now-btn">Book Now</button>
-        </div>
-      
-        <!-- Box 4 -->
-        <div class="price-item">
-          <h2>5 Hour Ultra - 275 Guest $1249</h2>
-          <div class="feature-box">
-            <p>Content related to the fourth section is provided in this box.</p>
-          </div>
-          <button class="book-now-btn">Book Now</button>
-        </div>
-      </div>
-      
-    </div>
+
+
+
+
+
+
+
+
   </main>
 
 
   <script type="module" src="script.js"></script>
 
-  <!--
-      This script places a badge on your repl's full-browser view back to your repl's cover
-      page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-      teal, blue, blurple, magenta, pink!
-    -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
 </body>
 
 </html>
