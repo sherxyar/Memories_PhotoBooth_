@@ -10,7 +10,10 @@ body {
 html, body {
   height: 100%;
 }
+#titleName {
+  color: gold;
 
+}
 main {
   position: relative;
   z-index: 1; /* Ensure the main content appears above the video */
@@ -60,14 +63,16 @@ main {
 }
 
 .MemoriesFont {
-  color: #ffffff;
+  color: #ffd700; /* Gold color */
   text-align: center;
   font-family: Inria Sans;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle text shadow */
 }
+
 
 .topHeader {
   justify-content: center;
@@ -659,7 +664,7 @@ button:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1500px;
   position: relative;
   margin: auto;
 }
