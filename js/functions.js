@@ -37,7 +37,7 @@ window.addEventListener('load', function() {
 function startSlideshow() {
   slideInterval = setInterval(function() {
     plusSlides(1); // Move to the next slide
-  }, 2000); // Set the interval to 1 second (1000 milliseconds)
+  }, 5000); // Set the interval to 2 second (1000 milliseconds)
 }
 
 // Stop the slideshow if the user interacts with the slideshow manually
